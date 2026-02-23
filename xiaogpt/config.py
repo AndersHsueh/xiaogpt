@@ -37,7 +37,7 @@ HARDWARE_COMMAND_DICT = {
 
 DEFAULT_COMMAND = ("5-1", "5-5")
 
-KEY_WORD = ("帮我", "请")
+KEY_WORD = ("召唤戴安娜", "请")
 CHANGE_PROMPT_KEY_WORD = ("更改提示词",)
 PROMPT = "以下请用 300 字以内回答，请只回答文字不要带链接"
 # simulate_xiaoai_question
@@ -57,6 +57,7 @@ class Config:
     moonshot_api_key: str = os.getenv("MOONSHOT_API_KEY", "")
     yi_api_key: str = os.getenv("YI_API_KEY", "")
     llama_api_key: str = os.getenv("GROQ_API_KEY", "")  # use groq
+    minimax_key: str = os.getenv("MINIMAX_API_KEY", "")
     glm_key: str = os.getenv("CHATGLM_KEY", "")
     gemini_key: str = os.getenv("GEMINI_KEY", "")  # keep the old rule
     gemini_model: str = os.getenv("GEMINI_MODEL", "")  # keep the old rule
